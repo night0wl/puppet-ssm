@@ -36,5 +36,8 @@ class ssm (
     validate_string($region)
   }
 
+  include ssm::install
+  include ssm::service
+  anchor { 'ssm::begin': } -> Class['ssm::install'] -> Class['ssm::service'] -> anchor { 'ssm::end': }
 }
 

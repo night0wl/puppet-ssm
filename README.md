@@ -23,10 +23,6 @@ Downloads and installs the amazon-ssm-agent, i.e. the EC2 run command agent
 This module currently only works on Ubuntu Trusty. It probably also works on
 Ubuntu Precise, but is untested.
 
-#### Forge Module dependencies
-
-  * [maestrodev-wget](https://forge.puppetlabs.com/maestrodev/wget)
-
 ## Usage
 
     class { 'ssm':
