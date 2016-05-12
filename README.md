@@ -20,8 +20,8 @@ Downloads and installs the amazon-ssm-agent, i.e. the EC2 run command agent
 
 ### Setup Requirements
 
-This module currently only works on Ubuntu Trusty. It probably also works on
-Ubuntu Precise, but is untested.
+This module currently only works on Ubuntu 14.04 (Trusty) and 12.04 (Precise).
+Pull requests for other distributions welcome.
 
 ## Usage
 
@@ -31,8 +31,7 @@ Ubuntu Precise, but is untested.
 
 ## Limitations
 
-Only tested with Ubuntu 14.04 (Trusty). Probably also works with Ubuntu 12.04
-(Precise).
+Only tested with Ubuntu 14.04 (Trusty) and 12.04 (Precise).
 
 Will not work with any other distros. Pull requests accepted.
 
