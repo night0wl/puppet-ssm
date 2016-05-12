@@ -1,12 +1,12 @@
 {
   "name": "Chaordix-ssm",
   "version": "0.1.0",
-  "author": "Chaordix",
+  "author": "Todd Courtnage <todd@chaordix.com>",
   "summary": "Install and configure the AWS EC2 Simple Systems Manager (SSM, i.e. the EC2 run command)",
   "license": "Apache-2.0",
-  "source": "",
-  "project_page": null,
-  "issues_url": null,
+  "source": "https://github.com/Chaordix/puppet-ssm",
+  "project_page": "https://github.com/Chaordix/puppet-ssm",
+  "issues_url": "https://github.com/Chaordix/puppet-ssm/issues",
   "operatingsystem_support": [
     {
       "operatingsystem": "Ubuntu",
