@@ -8,6 +8,11 @@ class ssm::service inherits ssm {
         enable  => true,
       }
     }
+    'Amazon', 'RedHat', 'CentOS': {
+      notify { 'cannot manage service':
+        message => "The amazon-ssm-agent service connot be managed by puppet on ${::operatingsystem}"
+      }
+    }
     default: { fail("The ${module_name} module is not supported on ${::osfamily}/${::operatingsystem}.") }
   }
 }
