@@ -1,9 +1,11 @@
 # Install the ssm package
-class ssm::install inherits ssm {
+class ssm::install (
+  $region = $region
+) {
   case $::operatingsystem {
     'Ubuntu': {
       exec { 'download_ssm-agent':
-        command => "/usr/bin/wget -N https://amazon-ssm-${::region}.s3.amazonaws.com/latest/debian_amd64/amazon-ssm-agent.deb -O /opt/amazon-ssm-agent.deb",
+        command => "/usr/bin/wget -N https://amazon-ssm-${region}.s3.amazonaws.com/latest/debian_amd64/amazon-ssm-agent.deb -O /opt/amazon-ssm-agent.deb",
         path    => '/bin:/usr/bin:/usr/local/bin:/usr/sbin',
         creates => '/opt/amazon-ssm-agent.deb',
       }
